@@ -196,8 +196,8 @@ const exercicio12 = () => {
 //-------------------------------------------------------------------
 
 const exercicio13 = () => {
-  let num1 = Number(document.getElementById("num1").value;
-  let num2 = Number(document.getElementById("num2").value;
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
   let result = document.getElementById("resultado");
   let error = document.getElementById("erro");
 
