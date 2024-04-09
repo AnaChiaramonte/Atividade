@@ -3,7 +3,7 @@ const exercicio1 = () => {
     " <h2>Resposta da Atividade</h2>";
   for (let i = 1; i <= 10; i++)
     document.getElementById("resposta").innerHTML += `<h3>#${i}</h3>`;
-  // console.log(resposta ${i});
+
 };
 
 //--------------------------------------------------------------
@@ -196,8 +196,8 @@ const exercicio12 = () => {
 //-------------------------------------------------------------------
 
 const exercicio13 = () => {
-  let num1 = document.getElementById("num1").value;
-  let num2 = document.getElementById("num2").value;
+  let num1 = Number(document.getElementById("num1").value;
+  let num2 = Number(document.getElementById("num2").value;
   let result = document.getElementById("resultado");
   let error = document.getElementById("erro");
 
@@ -402,7 +402,7 @@ const exercicio21 = () => {
 
 
   //------------------------------------------------------------------------
-  let soma = 0;
+  let soma = 0;//para armazenar o valor para somar
   const exercicio22 = () => {
     let num = document.getElementById("num").value;
     let result = document.getElementById("resultado")
@@ -411,18 +411,13 @@ const exercicio21 = () => {
     result.innerText = "";
   
     if (soma <= 100){
-      soma += parseInt(num);
+      soma += Number(num);//passa ou inteiro ou numeros com virgula
       result.innerText = `a soma é ${soma}`
     }else{
       result.innerText = "";
       error.innerText = `a soma ja chegou a 100`
     }
   };
-
-
-
-
-
   
 //----------------------------------------------------------------------
 const exercicio23 = () => {
@@ -483,7 +478,7 @@ const exercicio25 = () => {
   array.push(num1);
   array.push(num2);
   array.push(num3);
-  array.sort((a, b) => a - b);
+  array.sort((a, b) => a - b);//ordenar
   console.log(array)
 
   if (num1 <= 0 || num2 <= 0 || num3 <= 0) {
